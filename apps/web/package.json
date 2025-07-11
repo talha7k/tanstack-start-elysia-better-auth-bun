@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun with-env vinxi dev",
-    "build": "bun with-env vinxi build",
-    "start": "bun with-env vinxi start",
+    "dev": "node init && bun with-env vinxi dev",
+    "build": "node init && bun with-env vinxi build",
+    "start": "node init && bun with-env vinxi start",
     "with-env": "bun --env-file=../../.env --bun",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

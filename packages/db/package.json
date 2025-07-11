@@ -19,9 +19,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "dev": "bun run --watch tsc",
+    "dev": "node init && bun run --watch tsc",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
     "generate": "bun with-env drizzle-kit generate",
